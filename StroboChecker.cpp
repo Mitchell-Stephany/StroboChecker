@@ -16,11 +16,14 @@ using namespace std;
 
 int main(){
 	int n;
+
+	cout<< "Please enter a number -> ";
+	cin>> n;
 	if(n < 0){
-		cout<<"You must enter a nonnegative integer.";
+		cout<< "You must enter a nonnegative integer.";
 	}
 	else
-		cout<<"That could work. I haven't coded that yet though.";
+		cout<< "That could work. I haven't coded that yet though.";
 }
 
 
