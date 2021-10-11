@@ -14,7 +14,6 @@
 using namespace std;
 
 	int main(){
-		int i = 0;
 		int number;
 		string intString;
 
@@ -31,27 +30,41 @@ using namespace std;
 		}
 
 		intString = to_string(number);
-		char digit = intString.at(i);
+//		char digit = intString.at(0);
 		int numDigits = intString.length();
+		int digitEnd = number % 10;
+
 		cout << "The number of digits is " << numDigits << "." << endl;
-		cout << "The first digit is " << digit << "." << endl;
+//		cout << "The first digit is " << digit << "." << endl;
+		cout << "The final digit is " << digitEnd << "." << endl;
 
-		intString[0] = 0;
-		intString[1] = 1;
-		intString[6] = 9;
-		intString[8] = 8;
-		intString[9] = 6;
-
-		for (int i = 0; i < numDigits / 2; i++)
+		while(number >= 10)
+				{
+					number = number / 10;
+				}
+					cout << "The first digit is " << number << "." << endl;
+		if(digitEnd == number)
 		{
-			int left = intString.at(i);
-			int right = (digit - 1 - i);
-
-			if(left != right)
-			{
-				cout << "Error.";
-			}
+			cout << "Loser.";
 		}
+
+//		intString[0] = 0;
+//		intString[1] = 1;
+//		intString[6] = 9;
+//		intString[8] = 8;
+//		intString[9] = 6;
+
+//		for (int i = 0; i < numDigits / 2; i++)
+//		{
+//			int left = intString.at(i);
+//			int right = (digitEnd);
+
+//			if(left != right)
+//			{
+//				cout << "Error.";
+//			}
+//		}
+		return 0;
 	}
 
 
