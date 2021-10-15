@@ -15,7 +15,7 @@ using namespace std;
 int main(){
 	long number;
 	int reversedNumber = 0;
-//	int i, j; // nested for loop with if statement
+	int i; // nested for loop with if statement
 	cout << "Please enter a nonnegative integer -> ";
 	cin >> number;
 
@@ -25,11 +25,16 @@ int main(){
 	char digitMiddle = numberString.at((numDigits - 1) / 2); //grabs middle digit
 	char digitFinal = numberString.at(numDigits - 1); // grabs final digit
 
-//	string rnumberString = to_string(reversedNumber);
-//	int rDigits = numberString.length();
-//	int rFirst = numberString.at(0);
-//	int rContinuous = numberString.at(0);
-//	int numContinuous = numberString.at(0);
+	string rNumberString = to_string(reversedNumber);
+	int numRDigits = rNumberString.length();
+	char digitRMiddle = rNumberString.at((numRDigits) / 2);
+
+//	while(number != 0)
+//	{
+//		reversedNumber *= 10;
+//		reversedNumber += number % 10;
+//		number /= 10;
+//	}
 
 	if(number < 0)
 	{
@@ -39,31 +44,28 @@ int main(){
 	{
 		cout << number << " is a strobogrammatical number." << endl;
 	}
-	if(numDigits %2 != 0 && (digitMiddle != 0 || digitMiddle != 1 || digitMiddle != 8)) //written to see if the number of digits in an integer is odd
+	else if(numDigits %2 != 0 && (digitMiddle != 0 || digitMiddle != 1 || digitMiddle != 8)) //written to see if the number of digits in an integer is odd
 	{
 		cout << number << " is not a strobogrammatical number." << endl;
 	}
+	else if(digitFirst == digitFinal)
+	{
+			for(i = 1; i <= numDigits / 2; i++)
+			{
+				cout << digitFirst << " <-> " << digitFinal << endl;
+				cout << numberString.at(i) << " <-> " << rNumberString.at(i) << endl;
 
+			}
+	}
+	else
+	{
+		cout << "Hello." << endl;
+	}
 
-	while(number != 0)
-		{
-			reversedNumber *= 10;
-			reversedNumber += number % 10;
-			number /= 10;
-		}
-
-
-//				cout << numContinuous << " <-> " << rContinuous << endl;
-
-
-
-
-
-	cout << digitFirst << endl;
+	cout << digitRMiddle << endl;
 	cout << digitMiddle << endl;
-	cout << digitFinal << endl;
-//	cout << rDigits << endl;
-//	cout << rFirst << endl;
 	cout << reversedNumber << endl;
+
+	return 0;
 }
 
