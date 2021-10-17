@@ -2,7 +2,7 @@
 * This program will determine if a number is strobogrammatic which is a number that is viewed the same upside down as it is right side up. <br>
 * @author Mitchell Stephany
 * <pre>
-* DATE: November 17, 2021
+* DATE: October 17, 2021
 * File: StroboChecker.cpp
 * Course: csc1253 Section 3 <br>
 * Programming Project #: 2 <br
