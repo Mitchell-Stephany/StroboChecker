@@ -1,10 +1,10 @@
 /**
-* This program will determine if a number is a strobogrammatic number and is viewed the same upside down as it is right side up. <br>
+* This program will determine if a number is strobogrammatic which is a number that is viewed the same upside down as it is right side up. <br>
 * @author Mitchell Stephany
 * <pre>
-* DATE: November 8, 2021
+* DATE: November 17, 2021
 * File: StroboChecker.cpp
-* Course: csc1253 Section x <br>
+* Course: csc1253 Section 3 <br>
 * Programming Project #: 2 <br
 * Instructor: Dr. Duncan
 * </pre>
