@@ -57,7 +57,7 @@ int main()
 			cout << numStr.at(i) << " <-> " << rNumberString.at(i) << endl;
 			if(!((numStr.at(i) == rNumberString.at(i)) || (numStr.at(i) == '6' && rNumberString.at(i) == '9') || (numStr.at(i) == '9' && rNumberString.at(i) == '6')) || (numStr.at(i) == '6' && rNumberString.at(i) == '6'))
 			{
-				if((numStr.at(i) == '2' || numStr.at(i) == '4' || numStr.at(i) == '5' || numStr.at(i) == '6' || numStr.at(i) == '7') || numStr.at(i) == '9' || !(midDig == '0' || midDig == '1' || midDig == '8'))
+				if((numStr.at(i) == '2' || numStr.at(i) == '3' || numStr.at(i) == '4' || numStr.at(i) == '5' || numStr.at(i) == '6' || numStr.at(i) == '7') || numStr.at(i) == '9' || !(midDig == '0' || midDig == '1' || midDig == '8'))
 				{
 					cout << number << " is not a strobogrammatical number.";
 					return 0;
